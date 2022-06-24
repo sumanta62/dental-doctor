@@ -29,6 +29,11 @@ html {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -54,7 +59,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3fbbc0;
+  color: #2c4964;
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
@@ -124,7 +129,7 @@ section {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1977cc;
+  border: 6px solid #3fbbc0;
   border-top-color: #d1e6f9;
   border-radius: 50%;
   width: 60px;
@@ -163,7 +168,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1977cc;
+  background: #3fbbc0;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -177,7 +182,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #298ce5;
+  background: #65c9cd;
   color: #fff;
 }
 
@@ -506,7 +511,7 @@ section {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(60, 60, 60, 0.8);
+  background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
   position: relative;
 }
@@ -526,37 +531,40 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+  content: "";
+  background-color: rgba(30, 35, 40, 0.6);
+}
+
+#hero .carousel-container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
 }
 
 #hero .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-  border-top: 4px solid #3fbbc0;
-}
-
-@media (max-width: 1200px) {
-  #hero .container {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 }
 
 #hero h2 {
-  color: #2f2f2f;
+  color: #fff;
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 #hero p {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #555555;
+  color: #fff;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -592,7 +600,7 @@ section {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(63, 187, 192, 0.8);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.5);
@@ -605,7 +613,7 @@ section {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: #3fbbc0;
+  background: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -627,7 +635,7 @@ section {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -637,6 +645,8 @@ section {
   transition: 0.5s;
   line-height: 1;
   color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
   background: #3fbbc0;
 }
 
@@ -649,8 +659,8 @@ section {
     height: 100vh;
   }
 
-  #hero .container {
-    margin-top: 100px;
+  #hero .carousel-container {
+    top: 8px;
   }
 }
 
@@ -670,7 +680,7 @@ section {
 
 @media (max-height: 500px) {
   #hero {
-    height: 160vh;
+    height: 120vh;
   }
 }
 
@@ -696,7 +706,7 @@ section {
   width: 80px;
   line-height: 80px;
   text-align: center;
-  color: #88C250;
+  color: #3fbbc0;
   background-color: #fff;
   border-radius: 50%;
   left: 50%;
@@ -715,7 +725,7 @@ section {
 
 .about-us .content-left .video:hover {
   color: #fff;
-  background-color: #88C250;
+  background-color: #3fbbc0;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
@@ -727,7 +737,7 @@ section {
   top: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid #88C250;
+  border: 1px solid #3fbbc0;
   border-radius: 50%;
   -webkit-animation: pulse-border-2 2s linear infinite;
   animation: pulse-border-2 2s linear infinite;
@@ -799,7 +809,7 @@ section {
   font-weight: 500;
   font-size: 14px;
   color: #fff;
-  background-color: #88C250;
+  background-color: #3fbbc0;
   padding: 5px 20px;
   border-radius: 4px;
 }
@@ -843,7 +853,7 @@ section {
 }
 
 .about-us .content-right .list li i {
-  color: #88C250;
+  color: #3fbbc0;
   font-size: 18px;
   display: inline-block;
   position: absolute;
@@ -859,6 +869,21 @@ section {
   margin-top: 50px;
 }
 
+.read-more {
+  background: #3fbbc0;
+  border: 0;
+  padding: 10px 22px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.read-more:hover {
+  background: #65c9cd;
+}
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -873,7 +898,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1977cc;
+  background: #3fbbc0;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -918,8 +943,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #3fbbc0;
+  border-color: #10a5aa;
 }
 
 .services .icon-box:hover .icon {
@@ -927,11 +952,11 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1977cc;
+  color: #3fbbc0;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #3291e6;
+  background: #2ccfd4;
 }
 
 .services .icon-box:hover h4 a,
@@ -1013,7 +1038,7 @@ section {
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
 .appointment .php-email-form select:focus {
-  border-color: #1977cc;
+  border-color: #3fbbc0;
 }
 
 .appointment .php-email-form input,
@@ -1026,7 +1051,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: #3fbbc0;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1035,7 +1060,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: #65c9cd;
 }
 
 
@@ -1079,7 +1104,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #76b5ee;
+  color: #3fbbc0;
 }
 
 .faq .faq-list .icon-show,
@@ -1104,7 +1129,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1977cc;
+  color: #3fbbc0;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1169,7 +1194,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #badaf7;
+  color: #3fbbc0;
   font-size: 26px;
 }
 
@@ -1201,11 +1226,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1977cc;
+  border: 1px solid #3fbbc0;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1977cc;
+  background-color: #3fbbc0;
 }
 
 @media (max-width: 767px) {
@@ -1246,6 +1271,45 @@ section {
   transform: scale(1.1);
 }
 
+.gallary-img {
+  /* display: block; */
+  overflow: hidden;
+  position: relative;
+}
+
+.gallary-img img {
+  /* position: absolute; */
+  transition: all 1s;
+  height: 240px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallary-img .hover-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  font-weight: bold;
+  transition: 0.5s;
+  z-index: 1;
+  text-align: center;
+}
+
+.gallary-img:hover img {
+  transform: scale(1.3);
+}
+
+.gallary-img:hover .hover-icon {
+  bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1264,7 +1328,7 @@ section {
   font-size: 24px;
   line-height: 0;
   color: #fff;
-  background: red;
+  background: #3fbbc0;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -1358,7 +1422,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: red;
+  border-color: #3fbbc0;
 }
 
 .contact .php-email-form input {
@@ -1370,7 +1434,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: red;
+  background: #3fbbc0;
   border: 0;
   padding: 12px 40px;
   color: #fff;
@@ -1379,7 +1443,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: #65c9cd;
 }
 
 @keyframes animate-loading {
@@ -1398,7 +1462,8 @@ section {
 .footer {
   font-size: 14px;
   background-color: #1f1f24;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.7);
 }
 

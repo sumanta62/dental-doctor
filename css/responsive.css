@@ -1,6 +1,13 @@
  /* Extra small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) { 
-
+ .gallery{
+    max-width: 100%;
+    margin: auto;
+ }
+ .container iframe{
+    max-width: 99%;
+    margin: auto;
+ }
 
 }
 
