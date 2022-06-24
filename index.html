@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>MediGrids - Medical & Hospital</title>
+  <!-- Favicons -->
+  <link href="img/favicon.svg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,12 +19,25 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <!-- box-icons -->
+  <link rel="stylesheet" href="js/boxicons/css/boxicons.min.css">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="js/bootstrap-icons/bootstrap-icons.css">
+  <!-- gligjtbox -->
+  <link rel="stylesheet" href="js/glightbox/css/glightbox.min.css">
   <!-- icofontcss -->
   <link rel="stylesheet" href="css/icofont.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -28,9 +45,743 @@
 
 <body>
 
-  
 
-  
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="align-items-center d-none d-md-flex">
+        <i class="bi bi-clock"></i> Monday - Saturday, 8AM to 10PM
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="bi bi-phone"></i> Call us now +1 5589 55488 55
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div id="mainmenu" class="container d-flex align-items-center">
+
+      <a href="index.html" class="logo me-auto"><img src="img/logo.png" alt=""></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">Medicio</a></h1> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span>
+        Appointment</a>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg)">
+          <div class="container">
+            <h2>Welcome to <span>Medicio</span></h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+              deleniti vel.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg)">
+          <div class="container">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+              deleniti vel.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg)">
+          <div class="container">
+            <h2>Sequi ea ut et est quaerat</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam.
+              Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus
+              deleniti vel.</p>
+            <a href="#about" class="btn-get-started scrollto">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+
+  <!-- ======= About Section ======= -->
+  <section class="about-us section">
+    <div class="container">
+      <div class="section-title">
+        <span>About</span>
+        <h2>About</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="content-left wow fadeInLeft" data-wow-delay=".3s">
+            <img src="img/about/about.png" alt="#">
+            <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+              class="glightbox video"><i class="bi bi-play-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <!-- content-1 start -->
+          <div class="content-right wow fadeInRight" data-wow-delay=".5s">
+
+            <h2>Thousands of specialities for any
+              type diagnostic.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius mod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi aliquip ex ea commodo consequat.</p>
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <ul class="list">
+                  <li><i class="bi bi-check2-square"></i>Conducts eye health checkups</li>
+                  <li><i class="bi bi-check2-square"></i>Best lasik treatment</li>
+                  <li><i class="bi bi-check2-square"></i>Treats minor illnesses</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-12">
+                <ul class="list">
+                  <li><i class="bi bi-check2-square"></i>Special eye exam</li>
+                  <li><i class="bi bi-check2-square"></i>Contact lens service</li>
+                  <li><i class="bi bi-check2-square"></i>Special Retina exam</li>
+                </ul>
+              </div>
+            </div>
+            <div class="button">
+              <div class="container">
+                <a href="#about" class="btn-get-started scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End About Area -->
+
+
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <span>Services</span>
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-heart-beat"></i></div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bi bi-bandaid"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-hospital"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-dna-alt-1"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-wheelchair"></i></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="icofont-medical-sign-alt"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Appointment Section ======= -->
+  <section id="appointment" class="appointment section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Make an Appointment</span>
+        <h2>Make an Appointment</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+              data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4"
+              data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 form-group mt-3">
+            <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date"
+              data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="department" id="department" class="form-select">
+              <option value="">Select Department</option>
+              <option value="Department 1">Department 1</option>
+              <option value="Department 2">Department 2</option>
+              <option value="Department 3">Department 3</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-4 form-group mt-3">
+            <select name="doctor" id="doctor" class="form-select">
+              <option value="">Select Doctor</option>
+              <option value="Doctor 1">Doctor 1</option>
+              <option value="Doctor 2">Doctor 2</option>
+              <option value="Doctor 3">Doctor 3</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Make an Appointment</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Appointment Section -->
+
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <section id="faq" class="faq section-bg">
+    <div class="container">
+
+
+      <div class="section-title">
+        <span>Frequently Asked Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+              data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+              class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+              class="collapsed">Dolor sit amet consectetur adipiscing elit? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+                integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+                Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+              class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
+                vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
+                gravida quis blandit turpis cursus in.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+              class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem
+              dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
+                nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
+                tellus in metus vulputate eu scelerisque.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section><!-- End Frequently Asked Questions Section -->
+
+
+
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
+
+
+  <!-- ======= Gallery Section ======= -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Gallery</span>
+        <h2>Gallery</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-1.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-2.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-3.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-4.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-5.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-6.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-7.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="gallery-item">
+            <a href="img/gallery/gallery-8.jpg" class="galelry-lightbox">
+              <img src="img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Gallery Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <span>Contact</span>
+        <h2>Contact</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="mb-3">
+        <iframe style="border:0; width: 100%; height: 350px;"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+          frameborder="0" allowfullscreen></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="row gy-4">
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-map flex-shrink-0"></i>
+            <div>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="icon bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-share flex-shrink-0"></i>
+            <div>
+              <h3>Opening Hours</h3>
+              <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                <strong>Sunday:</strong> Closed
+              </div>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <div class="row">
+          <div class="col-xl-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-xl-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+      <!--End Contact Form -->
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022 - US<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
 
 
 
@@ -38,6 +789,8 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/glightbox/js/glightbox.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
